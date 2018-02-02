@@ -1,13 +1,7 @@
 # Pomf
-[![Build
-Status](https://travis-ci.org/pomf/pomf.svg?branch=master)](https://travis-ci.org/pomf/pomf)
-[![Dependency
-Status](https://david-dm.org/pomf/pomf.svg)](https://david-dm.org/pomf/pomf)
-[![devDependency
-Status](https://david-dm.org/pomf/pomf/dev-status.svg)](https://david-dm.org/pomf/pomf#info=devDependencies)
+[![Build Status](https://travis-ci.com/Kenstin/himepomf.svg?token=GTbMxKWUHDqREtaxcyUq&branch=master)](https://travis-ci.com/Kenstin/himepomf)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/pomf/pomf/master/LICENSE)
-[![Documentation Status](https://readthedocs.org/projects/pomf/badge/?version=latest)](http://pomf.readthedocs.io/en/latest/?badge=latest)
 
 Pomf is a simple file uploading and sharing platform.
 
