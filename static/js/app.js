@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for (var i = 0; i < len; i++) {
       var file = evt.dataTransfer.files[i];
       var row = addRow(file);
-      uploadFile(file, row);
+      tryUploadFile(file, row);
     }
   }
   
@@ -233,8 +233,31 @@ document.addEventListener('DOMContentLoaded', function() {
     for (var i = 0; i < len; i++) {
       var file = evt.target.files[i];
       var row = addRow(file);
-      uploadFile(file, row);
+	  tryUploadFile(file, row);
     }
+  }
+  
+  function tryUploadFile(file, row) {
+	  if (file.size/1024/1024 > 10) { //file size in MB
+          showTooBigFileError(row);
+      }
+      else {
+          uploadFile(file, row);
+      }
+  }
+  
+  function showTooBigFileError(row) {
+	  var bar = row.querySelector('.file-progress');
+	  var percentIndicator = row.querySelector('.progress-percent');
+	  percentIndicator.style.visibility = 'hidden';
+	  bar.style.visibility = 'hidden';
+	  row.removeChild(bar);
+	  row.removeChild(percentIndicator);
+	  var text = document.createElement('p');
+	  text.style.textAlign = 'right';
+	  text.style.color = 'red';
+	  text.textContent = 'File too big!';
+	  row.appendChild(text);
   }
   
   /**
