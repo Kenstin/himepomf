@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var copy = document.createElement('button');
         copy.className = 'upload-clipboard-btn';
         var glyph = document.createElement('img');
-        glyph.src = 'img/glyphicons-512-copy.png';
+        glyph.src = 'img/copy.svg';
         copy.appendChild(glyph);
         url.appendChild(copy);
         copy.addEventListener("click", function(event) {
