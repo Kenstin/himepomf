@@ -1,10 +1,9 @@
 <?php
-session_start();
-
-/**
- * Handles POST uploads, generates filenames, moves files around and commits
- * uploaded metadata to database.
- */
+// Check if we can compress our output; if we can, we'll do it
+if (ini_get('zlib.output_compression') !== 'Off'
+    && isset($_SERVER["HTTP_ACCEPT_ENCODING"])
+    && strpos($_SERVER["HTTP_ACCEPT_ENCODING"], 'gzip') !== false)
+    ob_start("ob_gzhandler");
 
 require_once 'classes/Response.class.php';
 require_once 'classes/UploadException.class.php';
