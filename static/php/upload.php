@@ -17,6 +17,7 @@ require_once 'includes/database.inc.php';
  * @param UploadedFile $file
  *
  * @return string
+ * @throws Exception
  */
 function generateName($file)
 {
@@ -44,6 +45,8 @@ function generateName($file)
                 500
             ); // HTTP status code "500 Internal Server Error"
         }
+        if ($ext == 'exe') throw new Exception('Uploads of Windows Executable .EXE files are disabled.', 500);
+        //TODO: make it a message instead of "server error"
 
         $chars = ID_CHARSET;
         $name = '';
@@ -53,7 +56,7 @@ function generateName($file)
 
         // Add the extension to the file name
         if (isset($ext) && $ext !== '') {
-            $name .= '.'.$ext;
+            $name .= '.'. strip_tags($ext);
         }
 
         // Check if a file with the same name does already exist in the database
