@@ -140,27 +140,15 @@ function uploadFile($file)
     }
 
     // Add it to the database
-    if (empty($_SESSION['id'])) {
-        // Query if user is NOT logged in
-        $q = $db->prepare('INSERT INTO files (hash, originalname, filename, size, date, ' .
-                    'expire, delid) VALUES (:hash, :orig, :name, :size, :date, ' .
-                        ':exp, :del)');
-    } else {
-        // Query if user is logged in (insert user id together with other data)
-        $q = $db->prepare('INSERT INTO files (hash, originalname, filename, size, date, ' .
-                    'expire, delid, user) VALUES (:hash, :orig, :name, :size, :date, ' .
-                        ':exp, :del, :user)');
-        $q->bindValue(':user', $_SESSION['id'], PDO::PARAM_INT);
-    }
+    $q = $db->prepare('INSERT INTO files (hash, originalname, filename, size, date' .
+                ') VALUES (:hash, :orig, :name, :size, :date)');
 
     // Common parameters binding
     $q->bindValue(':hash', $file->getSha1(), PDO::PARAM_STR);
     $q->bindValue(':orig', strip_tags($file->name), PDO::PARAM_STR);
     $q->bindValue(':name', $newname, PDO::PARAM_STR);
     $q->bindValue(':size', $file->size, PDO::PARAM_INT);
-    $q->bindValue(':date', date('Y-m-d'), PDO::PARAM_STR);
-    $q->bindValue(':exp', null, PDO::PARAM_STR);
-    $q->bindValue(':del', sha1($file->tempfile), PDO::PARAM_STR);
+    $q->bindValue(':date', date('U'), PDO::PARAM_STR);
     $q->execute();
 
     return array(
@@ -210,7 +198,6 @@ function refiles($files)
         $f->size = $file['size'];
         $f->tempfile = $file['tmp_name'];
         $f->error = $file['error'];
-        //$f->expire   = $file['expire'];
         $result[] = $f;
     }
 
