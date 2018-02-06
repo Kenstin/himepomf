@@ -242,7 +242,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	    showTextError(row, "File too big!");
       }
       else if (file.name.split(".").pop() === "exe") {
-	    showTextError(row, "No .exe files - sorry!")
+	    showTextError(row, "No .exe files - sorry!");
+      }
+      else if (file.isDirectory) {
+	    showTextError(row, "No folders plz");
       }
       else {
           uploadFile(file, row);
