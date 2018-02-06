@@ -238,15 +238,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function tryUploadFile(file, row) {
-	  if (file.size/1024/1024 > 10) { //file size in MB
-          showTooBigFileError(row);
+	  if (file.size/1024/1024 > 10) { // file size in MB
+	    showTextError(row, "File too big!");
+      }
+      else if (file.name.split(".").pop() === "exe") {
+	    showTextError(row, "No .exe files - sorry!")
       }
       else {
           uploadFile(file, row);
       }
   }
   
-  function showTooBigFileError(row) {
+  function showTextError(row, textError) {
 	  var bar = row.querySelector('.file-progress');
 	  var percentIndicator = row.querySelector('.progress-percent');
 	  percentIndicator.style.visibility = 'hidden';
@@ -256,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	  var text = document.createElement('p');
 	  text.style.textAlign = 'right';
 	  text.style.color = 'red';
-	  text.textContent = 'File too big!';
+	  text.textContent = textError;
 	  row.appendChild(text);
   }
   
