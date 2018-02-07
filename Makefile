@@ -38,6 +38,7 @@ min-js:
 
 copy-img:
 	cp -v $(CURDIR)/static/img/*.png $(CURDIR)/build/img/
+	cp -v $(CURDIR)/static/img/*.svg $(CURDIR)/build/img/
 	cp -vT $(CURDIR)/static/img/favicon.ico $(CURDIR)/build/favicon.ico
 
 copy-php:
