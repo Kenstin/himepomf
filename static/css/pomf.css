@@ -50,7 +50,7 @@ body {
   background-repeat: no-repeat, repeat;
   color: #fff;
   font-family: 'Tajawal', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   height: 100%;
   line-height: 20px;
   margin: 0;
@@ -269,7 +269,7 @@ button.upload-clipboard-btn img {
   display: none;
 }
 #upload-filelist > li {
-  margin-top: 5px;
+  margin: 3px 0;
   overflow: hidden;
 }
 #upload-filelist > li.total {
@@ -288,7 +288,7 @@ button.upload-clipboard-btn img {
 .file-url {
   display: inline-block;
   float: right;
-  font-size: 0.9em;
+  font-size: 14px;
   margin-left: 8px;
   vertical-align: middle;
 }
@@ -296,7 +296,7 @@ button.upload-clipboard-btn img {
   color: #dad5da;
 }
 .file-url a:hover {
-  color: #1C1C1C;
+  color: #fff;
 }
 .progress-percent {
   float: right;
