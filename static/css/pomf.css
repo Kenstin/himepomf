@@ -54,7 +54,7 @@ body {
   height: 100%;
   line-height: 20px;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 12vh;
   padding-bottom: 40px;
 }
 .container {
@@ -67,7 +67,7 @@ body {
  */
 /* paragraphs */
 p {
-  margin: 0 0 10px;
+  margin: 0;
 }
 /* images */
 input[type=image], img {
@@ -111,7 +111,7 @@ a:focus {
   font-size: 25px;
   font-weight: 200;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   transition: font-size 0.5s;
   letter-spacing: 1px;
 }
@@ -123,7 +123,7 @@ a:focus {
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
-  padding: 28px 48px;
+  padding: 30px 30%;
   text-shadow: 0 1px rgba(255, 0, 224, 0.5);
   transition: background-color 0.25s, width 0.5s, height 0.5s;
 }
@@ -234,7 +234,7 @@ nav > ul > li:last-child:after {
  */
 #upload-filelist {
   list-style-type: none;
-  margin: 20px 50px;
+  margin: 20px 25px;
   padding: 0;
   text-align: left;
 }

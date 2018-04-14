@@ -259,6 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	  var text = document.createElement('p');
 	  text.style.textAlign = 'right';
 	  text.style.color = '#c36b73';
+	  text.style.paddingRight = '27px';
 	  text.textContent = textError;
 	  row.appendChild(text);
   }
