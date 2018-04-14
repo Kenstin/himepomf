@@ -41,12 +41,17 @@ copy-img:
 	cp -v $(CURDIR)/static/img/*.svg $(CURDIR)/build/img/
 	cp -vT $(CURDIR)/static/img/favicon.ico $(CURDIR)/build/favicon.ico
 
+copy-fonts:
+	cp -v $(CURDIR)/static/fonts/*.ttf $(CURDIR)/build/
+	
 copy-php:
 ifneq ($(wildcard $(CURDIR)/static/php/.),)
 	cp -rv $(CURDIR)/static/php/* $(CURDIR)/build/
 else
 	$(error The php submodule was not found)
 endif
+
+
 
 copy-moe:
 ifneq ($(wildcard $(CURDIR)/moe/.),)
