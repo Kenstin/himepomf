@@ -39,7 +39,7 @@ body {
   background-image: url('grill.php'), url('img/bg.png');
   background-position: 85% 100%, top left;
   background-repeat: no-repeat, repeat;
-  color: #333;
+  color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 100%;
@@ -73,7 +73,8 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #005580;
+  color: #fff;
+  text-shadow: 0 1px rgba(255, 0, 224, 0.5);
 }
 a:focus {
   outline: thin dotted #333;
@@ -105,22 +106,22 @@ a:focus {
   transition: font-size 0.5s;
 }
 .jumbotron .btn {
-  background: rgba(202, 230, 190, 0.75);
-  border: 1px solid #B7D1A0;
+  background: transparent;
+  border: 2px dashed #fff;
   border-radius: 4px;
-  color: #468847;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 24px;
   padding: 28px 48px;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px rgba(255, 0, 224, 0.5);
   transition: background-color 0.25s, width 0.5s, height 0.5s;
 }
 .jumbotron .btn:hover,
 .jumbotron .btn:active,
 .jumbotron .btn:focus,
 .jumbotron .btn.drop {
-  background-color: rgb(188, 228, 170);
+  background-color: #bce4aa0f;
   text-decoration: none;
 }
 
@@ -133,7 +134,7 @@ a:focus {
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 8px 14px;
-  text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px rgba(255, 0, 224, 0.5);
   transition: width 0.5s, margin 0.5s, padding 0.5s, background-color 0.5s;
 }
 .alert-error {
@@ -194,7 +195,7 @@ a.donate-btn:hover {
  */
 nav > ul,
 nav a {
-  color: #33799B;
+  color: #fff;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -281,7 +282,7 @@ button.upload-clipboard-btn img {
   vertical-align: middle;
 }
 .file-url a {
-  color: #5C5C5C;
+  color: #dad5da;
 }
 .file-url a:hover {
   color: #1C1C1C;

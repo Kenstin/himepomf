@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	  row.removeChild(percentIndicator);
 	  var text = document.createElement('p');
 	  text.style.textAlign = 'right';
-	  text.style.color = 'red';
+	  text.style.color = '#c36b73';
 	  text.textContent = textError;
 	  row.appendChild(text);
   }
