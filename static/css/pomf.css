@@ -133,6 +133,7 @@ a:focus {
 .jumbotron .btn.drop {
   background-color: #bce4aa0f;
   text-decoration: none;
+  outline: none;
 }
 
 /**
