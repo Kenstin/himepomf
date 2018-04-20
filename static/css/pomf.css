@@ -44,9 +44,9 @@
   */
 body {
   background-attachment: fixed, fixed;
-  background-color: #F7F7F7;
+  background-color: #5a3160;
   background-image: url('grill.php'), url('img/bg.png');
-  background-position: 85% 100%, top left;
+  background-position: 98% 100%, top left;
   background-repeat: no-repeat, repeat;
   color: #fff;
   font-family: 'Tajawal', sans-serif;
@@ -54,12 +54,12 @@ body {
   height: 100%;
   line-height: 20px;
   margin: 0;
-  padding-top: 12vh;
   padding-bottom: 40px;
 }
 .container {
   margin: 0 auto;
   max-width: 700px;
+  width: 45vw;
 }
 
 /**
@@ -93,7 +93,7 @@ a:focus {
  * JUMBOTRON
  */
 .jumbotron {
-  margin: 60px 0;
+  margin: 18vh 0 20px 0;
   text-align: center;
   transition: width 0.5s, height 0.5s, margin 0.5s, padding 0.5s;
 }
@@ -312,6 +312,7 @@ progress[value] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin-right: 27px;
   border: none;
 
 }
@@ -319,6 +320,7 @@ progress[value]::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.25) inset;
+  margin-right: 27px;
 }
 /* completed rows */
 .completed .file-progress,
@@ -404,11 +406,7 @@ progress[value]::-webkit-progress-bar {
   .alert {
     font-size: 13px;
   }
-  .alert-error {
-    background-color: rgba(248, 223, 223, 0.75);
-  }
   nav {
-    background-color: rgba(255, 255, 255, 0.75);
     border: #FFFFFF;
     padding: 10px 0;
   }
