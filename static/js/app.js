@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
     stopDefaultEvent(evt);
     state.dragCount -= 1;
     if (state.dragCount == 0) {
-      element.textContent = 'Select or drop file(s)';
+      element.textContent = 'Drop files here or click to upload';
     }
   }
 

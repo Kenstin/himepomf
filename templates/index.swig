@@ -7,5 +7,4 @@
 	{% include "upload_form.swig" %}
 </div>
 {% include "banners.swig" %}
-{% include "nav.swig" %}
 {% endblock %}
