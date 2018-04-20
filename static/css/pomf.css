@@ -24,10 +24,10 @@
  /**
   * FONTS
   */
-  @font-face {
-    font-family: Aubrey;
-    src: url(AUBREY1__.ttf);
-    font-weight: bold;
+@font-face {
+  font-family: Aubrey;
+  src: url(AUBREY1__.ttf);
+  font-weight: bold;
 }
 
 /**
@@ -239,8 +239,6 @@ nav > ul > li:last-child:after {
   margin: 0;
 }
 
-
-
 /**
  * UPLOAD FILE LIST
  */
@@ -257,19 +255,16 @@ nav > ul > li:last-child:after {
   height: auto; 
   background: transparent; 
   border: none; 
-} 
- 
+}
 .icon,button.upload-clipboard-btn:hover { 
   cursor: pointer; 
 } 
- 
 .icon,button.upload-clipboard-btn:focus { 
   text-decoration: none; 
   outline:none; 
   border: none; 
   box-shadow: none; 
 } 
- 
 button.upload-clipboard-btn img { 
   height: 16px; 
 } 
@@ -312,23 +307,19 @@ button.upload-clipboard-btn img {
 .progress-percent {
   float: right;
 }
-
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
   border: none;
 
 }
-
 progress[value]::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.25) inset;
 }
-
 /* completed rows */
 .completed .file-progress,
 .completed .progress-percent {
