@@ -116,24 +116,31 @@ a:focus {
   letter-spacing: 1px;
 }
 .jumbotron .btn {
-  background: transparent;
+  background: #775074;
+  background: #bce4aa20;
   border: 2px dashed #fff;
   border-radius: 4px;
-  color: #fff;
+  color:#fff;
+  color: #ffffffEE;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
-  padding: 30px 30%;
+  padding: 30px 20%;
   text-shadow: 0 1px rgba(255, 0, 224, 0.5);
-  transition: background-color 0.25s, width 0.5s, height 0.5s;
+  transition: background-color 0.25s, width 0.5s, height 0.5s, box-shadow 0.2s ease-in 0s;
 }
 .jumbotron .btn:hover,
 .jumbotron .btn:active,
 .jumbotron .btn:focus,
 .jumbotron .btn.drop {
-  background-color: #bce4aa0f;
+  background-color: #bce4aa3f;
   text-decoration: none;
   outline: none;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 30px 2px rgba(140,126,140,0.3);
+  -moz-box-shadow: 0px 0px 30px 2px rgba(140,126,140,0.3);
+  box-shadow: 0px 0px 30px 2px rgba(140,126,140,0.3);
+  transition: background-color 0.25s, width 0.5s, height 0.5s, box-shadow 0.2s ease-in 0s;
 }
 
 /**
