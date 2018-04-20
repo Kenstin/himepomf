@@ -204,6 +204,17 @@ a.donate-btn:hover {
 /**
  * NAVIGATION LINKS
  */
+nav {
+  margin: 0 auto;
+  width: 100%;
+}
+nav ul {
+width: 100%;
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: center;
+	overflow: auto;
+}
 nav > ul,
 nav a {
   color: #fff;
