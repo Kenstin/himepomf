@@ -10,8 +10,9 @@
 		<meta name="generator" content="Pomf {{pkgVersion}}">
 		<title>{{siteName}} &middot; {% block title %}Kawaii File Hosting{% endblock %}</title>
 		<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="pomf.min.css">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 		<script src="pomf.min.js"></script>
 	</head>
 	<body>
