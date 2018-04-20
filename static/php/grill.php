@@ -2,7 +2,6 @@
 
 // Array of image paths, feel free to add/remove to/from this list
 $images = array(
-    'img/2.png',
     'img/3.png',
     'img/4.png',
     'img/5.png',
@@ -10,7 +9,6 @@ $images = array(
     'img/7.png',
     'img/8.png',
     'img/9.png',
-    'img/10.png',
     'img/11.png',
 );
 
