@@ -10,7 +10,7 @@ TMPDIR := $(shell mktemp -d)
 # default modules
 MODULES="php"
 
-all: builddirs npm_dependencies swig htmlmin min-js copy-css copy-img submodules
+all: builddirs npm_dependencies swig htmlmin min-js copy-css copy-img copy-fonts submodules
 	
 swig:
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/index.swig > $(CURDIR)/build/index.html 
@@ -39,7 +39,7 @@ min-js:
 copy-img:
 	cp -v $(CURDIR)/static/img/*.png $(CURDIR)/build/img/
 	cp -v $(CURDIR)/static/img/*.svg $(CURDIR)/build/img/
-	cp -vT $(CURDIR)/static/img/favicon.ico $(CURDIR)/build/favicon.ico
+	cp -v $(CURDIR)/static/img/favicon/*.* $(CURDIR)/build/
 
 copy-css:
 	cp -vT $(CURDIR)/static/css/pomf.css $(CURDIR)/build/pomf.css
