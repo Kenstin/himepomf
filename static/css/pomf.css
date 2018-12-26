@@ -90,6 +90,41 @@ a:focus {
 }
 
 /**
+ * THANKS SECTION
+ */
+#thanks-section {
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	color:#fff;
+	color: #ffffffEE;
+	font-size: 18px;
+	padding: 10px 15px 0 15px;
+}
+
+#thanks-section ul {
+	font-size: 45px;
+	list-style: none;
+	padding-inline-start: 0;
+	font-family: 'Dancing Script', cursive;
+	margin: 40px 0 15px 0;
+}
+
+#thanks-section ul li:first-of-type {
+	padding-top: 30px;
+}
+
+#thanks-section ul li:last-of-type {
+	padding-top: 20px;
+}
+
+#thanks-section ul li {
+	padding: 5px 0;
+	font-size: 25px;
+}
+
+/**
  * JUMBOTRON
  */
 .jumbotron {
